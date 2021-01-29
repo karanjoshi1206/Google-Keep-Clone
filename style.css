@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  background-color: #f7c42e;
+  padding: 20px 50px;
+}
+header i,
+span {
+  font-size: 30px;
+  text-transform: capitalize;
+  margin: 0 5px;
+  font-weight: bold;
+}
+.keep {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.keep h1,
+h3 {
+  font-size: 25px;
+  margin: 20px 40px 0 0 !important;
+  transition: 0.5s;
+}
+.keep h1 {
+  background-color: #f7c42e;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.note_container {
+  position: relative;
+  min-height: 100h;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.note {
+  height: 250px;
+  width: 400px;
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
+  margin-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.384);
+  border-left: 1px solid rgba(0, 0, 0, 0.384);
+  overflow: hidden;
+}
+textarea {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 0 0 10px;
+  overflow-y: scroll;
+  outline: none;
+  border-width: 0;
+}
+.main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 0 0 10px;
+  overflow-y: scroll;
+  outline: none;
+  border-width: 0;
+}
+.icons {
+  position: relative;
+  right: 0;
+  text-align: center;
+  background: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.icons i {
+  margin: 5px 10px;
+  color: white;
+}
+.fa-edit {
+  background: rgb(18, 240, 18);
+  padding: 10px;
+  border-radius: 50%;
+}
+.fa-trash {
+  background: red;
+  padding: 10px;
+  border-radius: 50%;
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 990px) {
+  .note {
+    width: 350px;
+  }
+  header {
+    text-align: center;
+  }
+  .keep {
+    justify-content: center;
+    align-items: center;
+  }
+}
